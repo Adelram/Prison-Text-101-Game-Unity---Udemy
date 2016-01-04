@@ -66,8 +66,8 @@ public class TextController : MonoBehaviour {
 	
 	void state_mirror (){
 		if (Mirror_item == false) {
-			Text.text = "You observed the mirror and find something strange behind it." +
-						"You decided to take the item behind the mirror.\n\n" +
+			Text.text = "You can see a vague reflection of yourself in front " +
+						"of the dirty mirror.\n\n" +
 						"Press T to take the mirror or R to Return to roaming your cell.";
 			if (Input.GetKeyDown(KeyCode.T)) {
 				Text.text = "You took the mirror with you.\n\n" +
@@ -104,4 +104,3 @@ public class TextController : MonoBehaviour {
 		Mirror_item = false;
 	}	
 }
-
